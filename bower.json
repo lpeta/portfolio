@@ -2,7 +2,8 @@
   "name": "portfolio",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "materialize": "~0.97.0"
   },
   "devDependencies": {
     "chai": "~3.2.0",
