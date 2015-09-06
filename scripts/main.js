@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("Allo Allo")}();
+!function(){"use strict";function e(){$(".progress-wrap").addClass("hide")}function a(){$(".progress-wrap").removeClass("hide")}function s(e,a,s,n){$.ajax({url:"//formspree.io/leonardopeta@live.co.uk",method:"POST",data:{name:e,email:a,message:s},dataType:"json"}).success(function(){setTimeout(function(){n()},500)})}$("#send-email").on("submit",function(n){n.preventDefault(),a(),s($("#name").val(),$("#email").val(),$("#message").val(),e)})}();
