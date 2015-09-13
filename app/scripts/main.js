@@ -4,6 +4,10 @@
   'use strict';
 
   function hideLoader() {
+    $('#name').val('');
+    $('#email').val('');
+    $('#message').val('');
+    $('body').scrollTop(0);
     $('.progress-wrap').addClass('hide');
   }
 

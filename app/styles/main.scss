@@ -4,7 +4,7 @@ $dark-blue:  #263238;
 $light-grey: #EDEDED;
 
 body {
-  background-color: $light-grey !important;
+  background-color: $light-grey;
 }
 
 hr {
@@ -17,11 +17,6 @@ h1 {
   color: $light-grey;
 }
 
-h3 {
-  color: $blue;
-  margin-top: 50px;
-}
-
 h2 {
   width: 400px;
   color: $blue;
@@ -29,6 +24,11 @@ h2 {
   margin: 0 auto;
   font-size: 30px;
   background: $red;
+}
+
+h3 {
+  color: $blue;
+  margin-top: 50px;
 }
 
 h1,
@@ -43,6 +43,17 @@ p {
   text-align: center;
 }
 
+.progress-wrap {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: fixed;
+  padding: 200px;
+  background: $light-grey;
+}
+
 header {
   padding: 150px 0;
   background: $blue;
@@ -55,6 +66,12 @@ main {
       width: 33.33333%;
     }
   }
+
+  .contact {
+    .btn {
+      width: 100%;
+    }
+  }
 }
 
 footer {
@@ -62,4 +79,73 @@ footer {
   padding: 40px;
   color: $light-grey;
   background: $dark-blue;
+
+  .copyright {
+    margin-top: 15px;
+  }
+
+  a {
+    color: $blue;
+    float: right;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  a:hover {
+    color: $red;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    .portfolio {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    color: $red;
+    width: auto;
+    font-size: 25px;
+    background: none;
+  }
+
+  .progress-wrap {
+    padding: 200px 50px;
+  }
+
+  header {
+    padding: 50px 0;
+  }
+
+  footer {
+    text-align: center;
+
+    a {
+      float: none;
+      margin: 10px;
+    }
+
+    .copyright {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .portfolio {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
