@@ -1,5 +1,6 @@
 $red:        #E05B49;
 $blue:       #546E7A;
+$p_grey:     #9E9E9E;
 $dark-blue:  #263238;
 $light-grey: #EDEDED;
 
@@ -41,6 +42,11 @@ h2,
 h3,
 p {
   text-align: center;
+}
+
+p{
+  font-size: 20px;
+  color:#9e9e9e;
 }
 
 .progress-wrap {
