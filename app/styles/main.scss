@@ -1,5 +1,6 @@
 $red:        #E05B49;
 $blue:       #546E7A;
+$yellon:     #FEE50B;
 $p_grey:     #9E9E9E;
 $dark-blue:  #263238;
 $light-grey: #EDEDED;
@@ -24,7 +25,7 @@ h2 {
   padding: 10px;
   margin: 0 auto;
   font-size: 30px;
-  background: $red;
+  background: $yellon;
 }
 
 h3 {
@@ -98,7 +99,7 @@ footer {
   }
 
   a:hover {
-    color: $red;
+    color: $yellon;
   }
 }
 
